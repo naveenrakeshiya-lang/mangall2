@@ -383,7 +383,7 @@ function updateStats(){
 
   let words=input.value.trim().split(/\s+/).filter(w=>w).length;
   let timeSpent=90-time;
-  let wpm=timeSpent>0?(words/timeSpent)*90:0;
+  let wpm=timeSpent>0?(words/timeSpent)*60:0;
 
   document.getElementById("speed").innerText=wpm.toFixed(1);
 }
