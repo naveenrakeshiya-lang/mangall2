@@ -278,7 +278,7 @@ let input=document.getElementById("input");
 let correct=0,wrong=0,total=0;
 
 // ===== TIMER =====
-let time=60,timer=null,started=false;
+let time=90,timer=null,started=false;
 
 function startTimer(){
   timer=setInterval(()=>{
@@ -382,8 +382,8 @@ function updateStats(){
   document.getElementById("accuracy").innerText=acc.toFixed(1);
 
   let words=input.value.trim().split(/\s+/).filter(w=>w).length;
-  let timeSpent=60-time;
-  let wpm=timeSpent>0?(words/timeSpent)*60:0;
+  let timeSpent=90-time;
+  let wpm=timeSpent>0?(words/timeSpent)*90:0;
 
   document.getElementById("speed").innerText=wpm.toFixed(1);
 }
